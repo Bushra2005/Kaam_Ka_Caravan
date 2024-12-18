@@ -1,0 +1,173 @@
+
+.pcoded-content {
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+    color: #333;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* Start with cards hidden */
+    animation: fadeInUp 0.6s forwards; /* Animation applied */
+    text-align: center; /* Center align text and icons */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card h1,
+.card h6 {
+    margin: 0;
+    color: #333;
+}
+
+.card-body a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+
+.progress-bar {
+    transition: width 0.4s ease;
+    border-radius: 4px;
+}
+
+.progress-bar-pink {
+    background-color: #00ffdd;
+}
+
+.progress-bar-success {
+    background-color: #28a745;
+}
+
+.progress-bar-warning {
+    background-color: #ffc107;
+}
+
+.progress-bar-danger {
+    background-color: #dc3545;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+h1.text-primary {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline > li {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-badge {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    background-color: #007bff;
+}
+
+.timeline-panel {
+    margin-left: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.timeline-panel h6 {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.progress-content {
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.card-title-primary {
+    color: #007bff;
+}
+
+.current-progress {
+    margin-top: 20px;
+}
+
+.progress-content {
+    margin-bottom: 15px;
+}
+
+.progress-text {
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-bar-primary {
+    background-color: #007bff;
+}
